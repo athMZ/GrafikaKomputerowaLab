@@ -50,18 +50,14 @@ public class TransformedShapes extends JPanel {
 		g2 = (Graphics2D)g.create();
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-		
-		// REMOVE THE FOLLOWING CODE, which draws a big red X in the upper right quadrant,
-		// and insert your own code to draw the required pictures in the four quadrants.
-
-		g2.translate(150, 150);
+		g2.translate(300, 300);
 		
 		g2.setColor(Color.BLACK);	
-		g2.scale(1.5, 1.5);
+		g2.scale(2.5, 2.5);
 		circle();
 
 		g2.setColor(Color.YELLOW);
-		g2.scale(0.5,0.5);
+		g2.scale(0.5, 0.5);
 		square();
 		
 		resetTransform();
