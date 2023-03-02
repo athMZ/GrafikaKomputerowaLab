@@ -1,11 +1,11 @@
-package lab1;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+
+//Zadanie 1 - Zuziak
 
 public class Transforms2D extends JPanel {
 
@@ -15,10 +15,75 @@ public class Transforms2D extends JPanel {
 			Graphics2D g2 = (Graphics2D)g;
 			g2.translate(300,300);  // Moves (0,0) to the center of the display.
 			int whichTransform = transformSelect.getSelectedIndex();
+						
+			switch(whichTransform) {
+				case 0:
+				break;
+				
+				case 1:
+					g2.scale(0.5, 0.5);
+				break;
+				
+				case 2:
+					g2.rotate(0.5);
+					break;
+					
+				case 3:
+					g2.scale(0.5, 0.8);
+					g2.rotate(Math.PI);
+					break;
+					
+				case 4:
+					g2.shear(0.35, 0);
+					break;
+					
+                case 5:
+                    g2.scale(1, 0.3);
+                    g2.translate(0, -900);
+                    break;
 
-			// TODO Apply transforms here, depending on the value of whichTransform!
+                case 6:
+                    g2.shear(0, -0.5);
+                    g2.rotate(Math.PI / 2);
+                    break;
 
-			g2.drawImage(pic, -200, -150, null); // Draw image with center at (0,0).
+                case 7:
+                    g2.scale(0.5, 1);
+                    g2.rotate(Math.PI);
+                    break;
+			
+                    
+                case 8:
+                    g2.scale(1, 0.3);
+                    g2.rotate(Math.PI/6);
+                    g2.translate(0, 300);
+                    break;
+
+                case 9:
+                    g2.translate(100, 0);
+                    g2.shear(0, 0.25);
+                    g2.rotate(Math.PI);
+                    break;
+              
+			}
+			
+			
+            //Polygon - Mikołaj Zuziak: nonagon (9 sides)
+            final int polygonSidesNumber = 9;
+            final int radius = 150;
+            
+            int[] x = new int[polygonSidesNumber];
+            int[] y = new int[polygonSidesNumber];
+
+			for(int i = 0; i< polygonSidesNumber; i++) {
+				x[i] = (int)(radius * Math.cos((2*Math.PI/polygonSidesNumber)*i));
+				y[i] = (int)(radius * Math.sin((2*Math.PI/polygonSidesNumber)*i));
+			}
+            
+			Polygon nonagon = new Polygon(x, y, polygonSidesNumber);
+			g2.setColor(Color.RED);
+			g2.fillPolygon(nonagon);
+			
 		}
 	}
 

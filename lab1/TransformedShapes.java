@@ -1,5 +1,3 @@
-package lab1a;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -52,47 +50,22 @@ public class TransformedShapes extends JPanel {
 		g2 = (Graphics2D)g.create();
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-		// TODO Draw the required image, using ONLY the four methods defined above, 
-		// along with g2.setColor, g1.scale, g2.translate, and g2.rotate.
-
-		/* ----------------------------------------------------------------------- */
 		
 		// REMOVE THE FOLLOWING CODE, which draws a big red X in the upper right quadrant,
 		// and insert your own code to draw the required pictures in the four quadrants.
 
-		// The next two line scale the X to be twice the original size
-		// and then moves the center of the X from (0,0) to (450,150).
+		g2.translate(150, 150);
+		
+		g2.setColor(Color.BLACK);	
+		g2.scale(1.5, 1.5);
+		circle();
 
-		g2.translate(450,150);
-		g2.scale(2,2);
-
-		// Set the drawing color to red.
-
-		g2.setColor(Color.RED);
-
-		// The next three lines draw a tilted rectangle centered at (0,0).
-
-		g2.rotate(Math.PI/4);
-		g2.scale(1,0.25);
+		g2.setColor(Color.YELLOW);
+		g2.scale(0.5,0.5);
 		square();
-
-		// The next two lines undo the previous scale and rotation.  (Can't use resetTransform()
-		// here because that would also eliminate the first translate and scale.)
-
-		g2.scale(1,4);
-		g2.rotate(-Math.PI/4);
-
-		// The next three lines draw a rectangle tilted in the opposite direction.
-
-		g2.rotate(-Math.PI/4);
-		g2.scale(1,0.25);
-		square();
-
-		// reset the transform, so changes don't apply to subsequent drawing
-
+		
 		resetTransform();
 		
-		/* ----------------------------------------------------------------------- */
 		
 	} // end paintComponent()
 
