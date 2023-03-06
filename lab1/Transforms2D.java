@@ -37,35 +37,34 @@ public class Transforms2D extends JPanel {
 					g2.shear(0.35, 0);
 					break;
 					
-                case 5:
-                    g2.scale(1, 0.3);
-                    g2.translate(0, -900);
-                    break;
+				case 5:
+				    g2.scale(1, 0.3);
+				    g2.translate(0, -900);
+				    break;
 
-                case 6:
-                    g2.shear(0, -0.5);
-                    g2.rotate(Math.PI / 2);
-                    break;
+				case 6:
+				    g2.shear(0, -0.5);
+				    g2.rotate(Math.PI / 2);
+				    break;
 
-                case 7:
-                    g2.scale(0.5, 1);
-                    g2.rotate(Math.PI);
-                    break;
-			
-                    
-                case 8:
-                    g2.scale(1, 0.3);
-                    g2.rotate(Math.PI/6);
-                    g2.translate(0, 300);
-                    break;
+				case 7:
+				    g2.scale(0.5, 1);
+				    g2.rotate(Math.PI);
+				    break;
 
-                case 9:
-                    g2.translate(100, 0);
-                    g2.shear(0, 0.25);
-                    g2.rotate(Math.PI);
-                    break;
-              
-			}
+
+				case 8:
+				    g2.scale(1, 0.3);
+				    g2.rotate(Math.PI/6);
+				    g2.translate(0, 300);
+				    break;
+
+				case 9:
+				    g2.translate(100, 0);
+				    g2.shear(0, 0.25);
+				    g2.rotate(Math.PI);
+				    break;
+      			}
 			
 			
             //Polygon - Mikołaj Zuziak: nonagon (9 sides)
