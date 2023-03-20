@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CPSC 424, Lab 2, Exercise 1</title>
+<style>
+    /* This style section is here to make the canvas more obvious on the
+       page.  It is white on a light gray page background, with a thin
+       black border. */
+    body {
+        background-color: #DDDDDD;
+    }
+    canvas {
+        background-color: white;
+        display: block;
+    }
+    #canvasholder {
+        border:2px solid black;
+        float: left; /* This makes the border exactly fit the canvas. */
+    }
+</style>
+
+<script src="./index.js"></script>
+
+</head>
+<body onload="init()"> <!-- the onload attribute here is what calls the init() function -->
+
+<h2>CS 424, Lab 2, Exercise 1</h2>
+
+<noscript>
+    <!-- This message will be shown in the page if JavaScript is not available. -->
+<p>JavaScript is required to use this page.</p>
+</noscript>
+
+<div id="canvasholder">
+<canvas id="canvas" width="600" height="600">
+    <!-- This message is shown on the page if the browser doesn't support the canvas element. -->
+Canvas not supported.
+</canvas>
+</div>
+
+</body>
+</html>
