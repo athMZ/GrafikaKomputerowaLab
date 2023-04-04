@@ -17,9 +17,6 @@
 </g>
 </defs>
 
-<!-- Tło -->
-<rect width="650" height="472" fill="white"/>
-
 <!-- Wiatrak fioletowy -->
 <use href = "#polygon" transform = "translate(-25,-22) scale(0.75, 0.75)"/>
 <use href = "#polygon" transform = "translate(140, 35) scale(0.75, 0.75)"/>
