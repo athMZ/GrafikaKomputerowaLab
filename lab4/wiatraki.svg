@@ -1,0 +1,45 @@
+<svg width="650" height="470" viewBox="0 0 650 470" fill="white" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<g id="polygon" fill="white" stroke-width="1" stroke="black">
+<polygon points="150,100 138.3022221559489,132.13938048432698 108.68240888334653,149.2403876506104 75.00000000000001,143.30127018922195 53.015368960704585,117.10100716628344 53.01536896070458,82.89899283371656 74.99999999999997,56.698729810778076 108.6824088833465,50.75961234938959 138.3022221559489,67.86061951567302 " fill="none" stroke="black" />
+<line x1="150" y1="100" x2="100" y2="100"/><line x1="138.3022221559489" y1="132.13938048432698" x2="100" y2="100"/><line x1="108.68240888334653" y1="149.2403876506104" x2="100" y2="100"/><line x1="75.00000000000001" y1="143.30127018922195" x2="100" y2="100"/><line x1="53.015368960704585" y1="117.10100716628344" x2="100" y2="100"/><line x1="53.01536896070458" y1="82.89899283371656" x2="100" y2="100"/><line x1="74.99999999999997" y1="56.698729810778076" x2="100" y2="100"/><line x1="108.6824088833465" y1="50.75961234938959" x2="100" y2="100"/><line x1="138.3022221559489" y1="67.86061951567302" x2="100" y2="100"/>
+
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="10s"
+      repeatCount="indefinite" />
+
+</g>
+</defs>
+
+<!-- Tło -->
+<rect width="650" height="472" fill="white"/>
+
+<!-- Wiatrak fioletowy -->
+<use href = "#polygon" transform = "translate(-25,-22) scale(0.75, 0.75)"/>
+<use href = "#polygon" transform = "translate(140, 35) scale(0.75, 0.75)"/>
+
+<rect x="45.603" y="43.6511" width="187.554" height="14.1385" transform="rotate(19 45.603 43.6511)" fill="#FF3333"/>
+<path d="M134 83L157.383 213.5H110.617L134 83Z" fill="#993399"/>
+
+<!-- Wiatrak zielony -->
+<use href = "#polygon" transform = "translate(420, -10) scale(0.5, 0.5)"/>
+<use href = "#polygon" transform = "translate(555, 36) scale(0.5, 0.5)"/>
+
+<rect x="467.893" y="34.0617" width="151.257" height="11.1135" transform="rotate(19 467.893 34.0617)" fill="#FF3333"/>
+<path d="M538 62L557 168H519L538 62Z" fill="#339933"/>
+
+<!-- Wiatrak niebieski -->
+<use href = "#polygon" transform = "translate(140, 140) scale(1, 1)"/>
+<use href = "#polygon" transform = "translate(380, 220) scale(1, 1)"/>
+
+<rect x="235.952" y="230.776" width="267.211" height="18.6861" transform="rotate(18 235.952 230.776)" fill="#FF3333"/>
+<path d="M361 282L394.775 466.5H327.225L361 282Z" fill="#3333FF"/>
+
+
+</svg>
