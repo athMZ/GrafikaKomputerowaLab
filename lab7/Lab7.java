@@ -279,8 +279,8 @@ public class Lab7 extends JPanel implements GLEventListener {
         if (texture != null) {
         	texture.enable(gl2);
         	texture.bind(gl2);
-            drawCurrentShape(gl2);
-            texture.disable(gl2);
+            	drawCurrentShape(gl2);
+            	texture.disable(gl2);
         
         } else
 		drawCurrentShape(gl2);
