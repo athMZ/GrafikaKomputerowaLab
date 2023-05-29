@@ -212,7 +212,7 @@ public class Lab7 extends JPanel implements GLEventListener {
 	
 		Texture texture;
 		BufferedImage img = paintPanel.copyOSC();
-        ImageUtil.flipImageVertically(img);
+        	ImageUtil.flipImageVertically(img);
 
 		GLContext context = displayGL.getContext();
 		
